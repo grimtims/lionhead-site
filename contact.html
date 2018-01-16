@@ -28,6 +28,8 @@
 			 }
 		</style>
 
+
+
 	</head>
 
 
@@ -37,7 +39,7 @@
 			<div class="site-header">
 				<div class="container">
 					<a href="index.html" id="branding">
-						<img src="images/logo.png" alt="" height="55" class="logo">
+						<img src="images/logo.png" alt="" height="80" class="logo">
 					</a> <!-- #branding -->
 
 					<!-- Default snippet for navigation -->
@@ -74,32 +76,42 @@
 										<p><strong>Lionhead Management</strong> <br>71 Bank Street, 7th Floor, Ottawa</p>
 									</address>
 									<div class="phone"><span class="contact-icon"><img src="images/icon-phone.png" class="icon"></span> +1 613 913 0426</div>
-									<div class="email"><span class="contact-icon"><img src="images/icon-envelope.png" class="icon"></span>randy@lionheadhomes.ca</div>
+									<!-- <a class="email" href = 'mailto:my@email?body="Yourbody"&subject="a subject".com'><span class="contact-icon"><img src="images/icon-envelope.png" class="icon"></span>randy@lionheadhomes.ca</a> -->
+
+									<div class="email">
+										<span class="contact-icon">
+											<img src="images/icon-envelope.png" class="icon">
+										</span>
+										<a class="" href='mailto:randy@lionheadhomes.ca?body=I would like to inquire more information about Lionhead homes.&subject=Information Request'>randy@lionheadhomes.ca</a>
+									</div>
+
 								</div>
 
-
 								<div class="map" id="map"></div>
-						    <script>
-						      function initMap() {
-						        var uluru = {lat: 45.420939, lng:  -75.700865};
-						        var map = new google.maps.Map(document.getElementById('map'), {
-						          zoom: 17,
-						          center: uluru
-						        });
-						        var marker = new google.maps.Marker({
-						          position: uluru,
-						          map: map
-						        });
-						      }
-						    </script>
-						    <script async defer
-						    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDchqtgXVk5pNwSCRALC-wQ7oLkLKzJlxU&callback=initMap">
-						    </script>
+
+								<script>
+									function initMap() {
+										var uluru = {lat: 45.420939, lng:  -75.700865};
+										var map = new google.maps.Map(document.getElementById('map'), {
+											zoom: 17,
+											center: uluru
+										});
+										var marker = new google.maps.Marker({
+											position: uluru,
+											map: map
+										});
+									}
+								</script>
+
 
 							</div>
 						</div>
+
+						<br>
 					</div>
 				</div> <!-- .page -->
+
+
 
 			</main> <!-- .main-content -->
 
@@ -127,8 +139,10 @@
 			</footer> <!-- .site-footer -->
 		</div>
 
+		<script type ="text/javascript" async defer
+		 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDchqtgXVk5pNwSCRALC-wQ7oLkLKzJlxU&callback=initMap">
+		</script>
 		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDchqtgXVk5pNwSCRALC-wQ7oLkLKzJlxU=initMap"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
 

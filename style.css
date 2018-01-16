@@ -1269,7 +1269,7 @@ form input[type="submit"], form button, form input[type="reset"] {
 
 #branding {
   float: left;
-  margin-top: 20px; }
+  margin-top: 10px; }
   #branding .logo, #branding .logo-text {
     display: inline-block;
     vertical-align: middle; }
@@ -1731,7 +1731,7 @@ form input[type="submit"], form button, form input[type="reset"] {
  * Footer Styles
  */
 .site-footer {
-  margin-top: 50px; }
+  margin-top: 0px; }
   .site-footer .container {
     border-top: 1px solid #383838;
     padding: 50px 15px 30px;
